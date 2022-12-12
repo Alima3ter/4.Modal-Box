@@ -1,0 +1,71 @@
+@import url("https://fonts.google.com/noto/specimen/Noto+Naskh+Arabic?subset=arabic&noto.script=Arab");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Naskh Arabic", sans-serif;
+}
+body,
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  background: rgba(137, 43, 226, 0.687);
+}
+#openBtn {
+  border: 0;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#openBtn:hover {
+  background: #ddd;
+}
+.modal-container {
+  /* display: none; */
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  width: 400px;
+  background-color: #fefefe;
+  margin: auto;
+  margin-top: 100px;
+  animation: animatetop 0.5s;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+.modal-header {
+  padding: 5px 15px;
+  justify-content: space-between;
+  background-color: blueviolet;
+  color: #fff;
+}
+.modal-header .closeBtn {
+  font-size: 2rem;
+  cursor: pointer;
+}
+.modal-header .closeBtn:hover {
+  color: rgb(39, 39, 39);
+}
+.modal-body {
+  padding: 15px 20px;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+@keyframes animatetop {
+    from{
+        margin-top: -300px;
+        opacity: 0;
+    }to{
+        margin-top: 100px;
+        opacity: 1;
+    }
+}
