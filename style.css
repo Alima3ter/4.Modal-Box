@@ -26,7 +26,7 @@ body {
   background: #ddd;
 }
 .modal-container {
-  /* display: none; */
+  display: none;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -61,11 +61,12 @@ body {
   line-height: 1.5rem;
 }
 @keyframes animatetop {
-    from{
-        margin-top: -300px;
-        opacity: 0;
-    }to{
-        margin-top: 100px;
-        opacity: 1;
-    }
+  from {
+    margin-top: -300px;
+    opacity: 0;
+  }
+  to {
+    margin-top: 100px;
+    opacity: 1;
+  }
 }
